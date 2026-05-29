@@ -11,10 +11,10 @@ function Index() {
           <span>Sweet Kellove</span>
         </div>
         <div className="opciones-menu">
-          <a href="inicio">Inicio</a>
-          <a href="productos">Productos</a>
-          <a href="sobre_nosotros">Sobre nosotros</a>
-          <a href="contacto">Contacto</a>
+          <a href="#inicio">Inicio</a>
+          <a href="#productos">Productos</a>
+          <a href="#sobre_nosotros">Sobre nosotros</a>
+          <a href="#contacto">Contacto</a>
         </div>
       </nav>
 
