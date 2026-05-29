@@ -21,7 +21,7 @@ function Index() {
       {/* Contenido principal */}
       <main className="contenido">
         <section id="inicio">
-          <h1>Bienvenidos Tonotos</h1>
+          <h1>Bienvenidos UWU</h1>
           <p>Contenido de la pagina principal</p>
         </section>
         <section id="productos">
