@@ -1,0 +1,72 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Barra de menú */
+.barra-menu {
+  background-color: #e5d4bc; /* Color beige principal */
+  padding: 15px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del logo */
+.logo img {
+  height: 50px; /* Ajusta el tamaño según tu necesidad */
+  width: auto;
+}
+
+/* Opciones del menú */
+.opciones-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.opciones-menu a {
+  text-decoration: none;
+  color: #4a3121; /* Color marrón */
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.opciones-menu a:hover {
+  color: #2d1d14; /* Color más oscuro al pasar el cursor */
+}
+
+/* Contenido de la página */
+.contenido {
+  padding: 40px 5%;
+  color: #4a3121;
+  min-height: calc(100vh - 86px); /* Altura mínima para ocupar toda la pantalla */
+}
+
+/* Diseño responsivo para celulares */
+@media (max-width: 600px) {
+  .barra-menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .opciones-menu {
+    gap: 20px;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;  /* alinea verticalmente al centro */
+  gap: 10px;            /* espacio entre imagen y texto */
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4a3121;       /* mismo color marrón que usas */
+}
