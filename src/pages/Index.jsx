@@ -1,5 +1,5 @@
 import logo from '../img/logo.png'
-import './styles.css'
+import '../styles/indexs.css'
 
 function Index() {
   return (
