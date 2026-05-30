@@ -266,7 +266,7 @@ function Index() {
                 <img src={whatsappImg} alt="WhatsApp" />
               </div>
               <a
-                href="https://wa.me/51900461130"
+                href="https://wa.me/51900461130?text=Hola,%20quiero%20hacer%20un%20pedido"
                 target="_blank"
                 rel="noopener noreferrer"
               >
