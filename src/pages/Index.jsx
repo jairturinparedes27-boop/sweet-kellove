@@ -42,7 +42,7 @@ function Index() {
         <a href="#sobre_nosotros">Sobre nosotros</a>
         <a href="#contacto">Contacto</a>
       </div>
-    </nav>
+</nav>
 
       {/* Contenido principal */}
       <main className="contenido">
