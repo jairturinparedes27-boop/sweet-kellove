@@ -841,31 +841,21 @@ footer {
     display: block;
   }
 
-  .logo span {
-    font-size: 16px;
-  }
-
   .opciones-menu {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-
     background: var(--beige);
-
     flex-direction: column;
-    align-items: center;
-
     padding: 1rem 0;
-
-    display: none;
-
-    box-shadow: 0 10px 20px rgba(0,0,0,.1);
   }
 
   .opciones-menu.activo {
     display: flex;
   }
+}
 
   .opciones-menu a {
     width: 100%;
@@ -877,4 +867,3 @@ footer {
     margin-left: 0;
     margin-top: 10px;
   }
-}
