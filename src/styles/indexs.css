@@ -842,21 +842,29 @@ footer {
     display: block;
   }
 
+  .barra-menu {
+    height: 70px;
+    padding: 0 5%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .opciones-menu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 70px;
     left: 0;
     width: 100%;
     background: var(--beige);
     flex-direction: column;
     padding: 1rem 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   }
 
   .opciones-menu.activo {
     display: flex;
   }
-}
 
   .opciones-menu a {
     width: 100%;
@@ -868,3 +876,4 @@ footer {
     margin-left: 0;
     margin-top: 10px;
   }
+}
