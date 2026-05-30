@@ -776,10 +776,11 @@ footer {
 
 @media (max-width: 600px) {
   .barra-menu {
-    height: auto;
-    padding: 16px 5%;
-    flex-direction: column;
-    gap: 16px;
+    height: 70px;
+    padding: 0 5%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .opciones-menu {
