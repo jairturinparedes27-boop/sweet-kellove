@@ -26,7 +26,7 @@ function Index() {
       <nav className="barra-menu">
       <div className="logo">
         <img src={logo} alt="Sweet Kellove logo" />
-        <span>Sweet Kellovee</span>
+        <span>Sweet Kellove</span>
       </div>
 
       <button
