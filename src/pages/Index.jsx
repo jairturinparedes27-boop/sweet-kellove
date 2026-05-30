@@ -1,5 +1,19 @@
 import logo from '../img/logo.png'
 import '../styles/indexs.css'
+import ubicacionImg from '../img/ubicacion.png'
+import whatsappImg from '../img/whatsapp.png'
+import gmailImg from '../img/gmail.png'
+import tiktokImg from '../img/tiktok.png'
+import maracuya from '../img/maracuya.png'
+import oreo from '../img/oreo.png'
+import lucuma from '../img/lucuma.png'
+import fresa from '../img/fresa.png'
+import limon from '../img/limon.png'
+import lemonCurd from '../img/lemon.png'
+import instagramImg from '../img/instaa.png'
+import facebookImg from '../img/faceboo.png'
+import tiktokImg2 from '../img/tiktooo.png'
+import whatsappImg2 from '../img/whasaa.png'
 
 function Index() {
   return (
@@ -25,12 +39,11 @@ function Index() {
         <section id="inicio">
           <span className="eyebrow">Pastelería artesanal · Lima, Perú</span>
           <h1>
-            Cada dulce,<br />
-            una <em>historia</em>
+            Cada dulce y sabor,<br />
+            tiene una <em>historia</em>
           </h1>
           <p>
-            Creamos pasteles y postres únicos, hechos con amor y los mejores
-            ingredientes para hacer de cada ocasión un momento inolvidable.
+             Aquí encontrarás postres artesanales, elaborados con amor y dedicación bocaditos, tortas, postres y más.
           </p>
           <div className="hero-botones">
             <a href="#productos" className="btn btn-primary">Ver productos</a>
@@ -48,55 +61,130 @@ function Index() {
           <div className="productos-grid">
             {/* Tarjeta 1 */}
             <article className="producto-card">
-              <div className="producto-img" style={{ background: 'linear-gradient(135deg, #f0dede, #d4a5a5)' }}>
-                🎂
+              <div className="producto-img">
+                <img src={maracuya} alt="Torta personalizada" />
                 <span className="producto-badge">Popular</span>
               </div>
               <div className="producto-body">
-                <h3>Torta personalizada</h3>
-                <p>Diseña tu pastel de ensueño con los sabores y decoraciones que más te gusten. Ideal para cumpleaños y celebraciones.</p>
+                <h3>cheesecake de maracuya</h3>
+                <p>Base de queso crema y crema de leche con zumo de maracuyá, (Base de galleta).</p>
+                <div className="lista-precios">
+                  <div>Pequeña (8 personas) - S/. 80</div>
+                  <div>Mediana (15 personas) - S/. 120</div>
+                  <div>Grande (25 personas) - S/. 180</div>
+                </div>
                 <div className="producto-footer">
-                  <div className="producto-precio">
-                    S/. 80
-                    <span>precio base</span>
-                  </div>
                   <a href="#contacto" className="btn-pedir">Pedir</a>
                 </div>
               </div>
             </article>
 
-            {/* Tarjeta 2 */}
+           {/* CHEESECAKE DE OREO */}
             <article className="producto-card">
-              <div className="producto-img" style={{ background: 'linear-gradient(135deg, #faf6f0, #faeeda)' }}>
-                🧁
+              <div className="producto-img">
+                <img src={oreo} alt="Cheesecake de Oreo" />
+                <span className="producto-badge">Popular</span>
               </div>
               <div className="producto-body">
-                <h3>Cupcakes artesanales</h3>
-                <p>Esponjosos cupcakes con crema batida, rellenos de frutas y decoraciones únicas. Disponibles por docena o media docena.</p>
+                <h3>Cheesecake de Oreo</h3>
+                <p>
+                  Base de queso crema y crema de leche con trozos de galleta Oreo,
+                  cubierta con ganache de chocolate. (Base galleta Oreo).
+                </p>
+                <div className="lista-precios">
+                  <div>Chico   (4 personas)  - S/. 40</div>
+                  <div>Mediano (6 personas)  - S/. 55</div>
+                  <div>Grande  (10 personas) - S/. 85</div>
+                </div>
                 <div className="producto-footer">
-                  <div className="producto-precio">
-                    S/. 5
-                    <span>por unidad</span>
-                  </div>
                   <a href="#contacto" className="btn-pedir">Pedir</a>
                 </div>
               </div>
             </article>
 
-            {/* Tarjeta 3 */}
+            {/* CHEESECAKE DE LÚCUMA */}
             <article className="producto-card">
-              <div className="producto-img" style={{ background: 'linear-gradient(135deg, #f5ede0, #e5d4bc)' }}>
-                🍰
-                <span className="producto-badge">Temporada</span>
+              <div className="producto-img">
+                <img src={lucuma} alt="Cheesecake de Lúcuma" />
               </div>
               <div className="producto-body">
-                <h3>Cheesecake premium</h3>
-                <p>Cremoso cheesecake con base de galleta y topping de frutas frescas de temporada. Sin conservantes artificiales.</p>
+                <h3>Cheesecake de Lúcuma</h3>
+                <p>
+                  Base de queso crema y crema de leche con pulpa de lúcuma,
+                  decorado con delicioso manjar artesanal de lúcuma.
+                </p>
+                <div className="lista-precios">
+                  <div>Chico   (4 personas)       - S/. 40</div>
+                  <div>Mediano (6 - 7 personas)   - S/. 60</div>
+                  <div>Grande  (10 - 11 personas) - S/. 95</div>
+                </div>
                 <div className="producto-footer">
-                  <div className="producto-precio">
-                    S/. 45
-                    <span>porción familiar</span>
-                  </div>
+                  <a href="#contacto" className="btn-pedir">Pedir</a>
+                </div>
+              </div>
+            </article>
+
+            {/* PIE DE FRESA */}
+            <article className="producto-card">
+              <div className="producto-img">
+                <img src={fresa} alt="Pie de Fresa" />
+              </div>
+              <div className="producto-body">
+                <h3>Pie de Fresa</h3>
+                <p>
+                  Elaborado con pasta frolla, relleno de crema pastelera y compota
+                  de fresa, decorado con fresas frescas.
+                </p>
+                <div className="lista-precios">
+                  <div>Chico (4 - 6 personas) - S/. 30</div>
+                  <div>Mediano (6 - 8 personas) - S/. 40</div>
+                  <div>Grande (10 - 12 personas) - S/. 55</div>
+                </div>
+                <div className="producto-footer">
+                  <a href="#contacto" className="btn-pedir">Pedir</a>
+                </div>
+              </div>
+            </article>
+
+            {/* PIE DE LIMÓN */}
+            <article className="producto-card">
+              <div className="producto-img">
+                <img src={limon} alt="Pie de Limón" />
+              </div>
+              <div className="producto-body">
+                <h3>Pie de Limón</h3>
+                <p>
+                  Pasta frolla con un relleno de crema de limón a base de leche
+                  condensada, decorado con merengue italiano.
+                </p>
+                <div className="lista-precios">
+                  <div>Chico (4 - 5 personas) - S/. 30</div>
+                  <div>Mediano (6 - 7 personas) - S/. 40</div>
+                  <div>Grande (10 - 11 personas) - S/. 60</div>
+                </div>
+                <div className="producto-footer">
+                  <a href="#contacto" className="btn-pedir">Pedir</a>
+                </div>
+              </div>
+            </article>
+
+            {/* LEMON CURD */}
+            <article className="producto-card">
+              <div className="producto-img">
+                <img src={lemonCurd} alt="Lemon Curd" />
+              </div>
+              <div className="producto-body">
+                <h3>Lemon Curd</h3>
+                <p>
+                  Elaborado con pasta sablee, con una exquisita crema de limón,
+                  decorado con merengue italiano.
+                </p>
+                <div className="lista-precios">
+                  <div>Chico (4 - 6 personas) - S/. 30</div>
+                  <div>Mediano (6 - 8 personas) - S/. 40</div>
+                  <div>Grande (10 - 12 personas) - S/. 60</div>
+                </div>
+                <div className="producto-footer">
                   <a href="#contacto" className="btn-pedir">Pedir</a>
                 </div>
               </div>
@@ -110,7 +198,7 @@ function Index() {
             <div className="sobre-visual">🫶</div>
             <div className="sobre-texto">
               <span className="seccion-label">Nuestra historia</span>
-              <h2>Hechos con amor,<br />desde Lima <em>para ti</em></h2>
+              <h2>Hechos con amor,<br /><em>para ti</em></h2>
               <p>
                 Somos una pastelería artesanal nacida de la pasión por la repostería creativa.
                 Todo comenzó en una cocina familiar, con recetas transmitidas de generación en generación.
@@ -146,29 +234,56 @@ function Index() {
 
           <div className="contacto-grid">
             {/* Info de contacto */}
-            <div className="contacto-info">
-              <h3>Estamos aquí para ti</h3>
-              <p>
-                Cuéntanos sobre tu ocasión especial y con gusto te ayudamos a crear
-                el dulce perfecto. Respondemos en menos de 24 horas.
-              </p>
-              <div className="contacto-item">
-                <div className="contacto-icon">📍</div>
-                <span>Lima, Perú</span>
+           <div className="contacto-info">
+            <h3>Estamos aquí para ti</h3>
+
+            <p>
+              Cuéntanos sobre tu ocasión especial y con gusto te ayudamos a crear
+              el dulce perfecto. Respondemos en menos de 24 horas.
+            </p>
+
+            <div className="contacto-item">
+              <div className="contacto-icon">
+                <img src={ubicacionImg} alt="Ubicación" />
               </div>
-              <div className="contacto-item">
-                <div className="contacto-icon">💬</div>
-                <span>+51 999 999 999 (WhatsApp)</span>
-              </div>
-              <div className="contacto-item">
-                <div className="contacto-icon">✉️</div>
-                <span>hola@sweetkellove.pe</span>
-              </div>
-              <div className="contacto-item">
-                <div className="contacto-icon">📸</div>
-                <span>@sweetkellove</span>
-              </div>
+              <span>Lima, Perú</span>
             </div>
+
+            <div className="contacto-item">
+              <div className="contacto-icon">
+                <img src={whatsappImg} alt="WhatsApp" />
+              </div>
+              <a
+                href="https://wa.me/51900461130"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                +51 900 461 130
+              </a>
+            </div>
+
+            <div className="contacto-item">
+              <div className="contacto-icon">
+                <img src={gmailImg} alt="Correo" />
+              </div>
+              <a href="mailto:sweetkellove@gmail.com">
+                sweetkellove@gmail.com
+              </a>
+            </div>
+
+            <div className="contacto-item">
+              <div className="contacto-icon">
+                <img src={tiktokImg} alt="TikTok" />
+              </div>
+              <a
+                href="https://www.tiktok.com/@sweetkellovee"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @sweetkellovee
+              </a>
+</div>
+          </div>
 
             {/* Formulario */}
             <form className="formulario" onSubmit={(e) => e.preventDefault()}>
@@ -211,23 +326,46 @@ function Index() {
             <p>Pastelería artesanal hecha con amor en Lima, Perú. Creamos momentos dulces e inolvidables para cada ocasión especial.</p>
           </div>
           <div className="footer-col">
-            <h4>Navegación</h4>
-            <a href="#inicio">Inicio</a>
-            <a href="#productos">Productos</a>
-            <a href="#sobre_nosotros">Sobre nosotros</a>
-            <a href="#contacto">Contacto</a>
+          <h4>Síguenos</h4>
+
+          <div className="redes-sociales">
+            <a
+              href="https://www.instagram.com/sweetkellove"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={instagramImg} alt="Instagram" />
+            </a>
+
+            <a
+              href="https://www.facebook.com/sweetkellove"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={facebookImg} alt="Facebook" />
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@sweetkellovee"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={tiktokImg2} alt="TikTok" />
+            </a>
+
+            <a
+              href="https://wa.me/51900461130?text=Hola,%20quiero%20hacer%20un%20pedido"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={whatsappImg2} alt="WhatsApp" />
+            </a>
           </div>
-          <div className="footer-col">
-            <h4>Síguenos</h4>
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">TikTok</a>
-            <a href="#">WhatsApp</a>
-          </div>
+        </div>
         </div>
         <div className="footer-bottom">
           <span>© 2026 Sweet Kellove · Todos los derechos reservados</span>
-          <span>Hecho con 🍰 en Lima</span>
+          <span>Hecho con amor en Lima</span>
         </div>
       </footer>
     </>

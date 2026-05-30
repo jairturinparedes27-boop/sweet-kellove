@@ -227,6 +227,16 @@ body {
   position: relative;
   z-index: 1;
 }
+ /* ──precios─────────────────────────── */
+.lista-precios {
+  margin: 15px 0;
+}
+
+.lista-precios div {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  font-weight: 500;
+}
 
 /* ── Botones ───────────────────────────────────────── */
 .btn {
@@ -327,7 +337,7 @@ body {
 
 .productos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 28px;
 }
 
@@ -517,6 +527,21 @@ body {
 }
 
 /* ── Sección: Contacto ─────────────────────────────── */
+
+.contacto-icon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacto-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 #contacto {
   padding: 6rem 7%;
   background: var(--crema);
@@ -701,6 +726,29 @@ footer {
   align-items: center;
   font-size: 12.5px;
   color: var(--beige-dark);
+}
+
+.redes-sociales {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.redes-sociales a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.redes-sociales img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.redes-sociales img:hover {
+  transform: scale(1.15);
 }
 
 /* ── Responsive ────────────────────────────────────── */
