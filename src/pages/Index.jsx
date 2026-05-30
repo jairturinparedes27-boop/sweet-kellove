@@ -1,5 +1,7 @@
 import logo from '../img/logo.png'
 import '../styles/indexs.css'
+import { useState } from 'react';
+
 import ubicacionImg from '../img/ubicacion.png'
 import whatsappImg from '../img/whatsapp.png'
 import gmailImg from '../img/gmail.png'
@@ -16,21 +18,31 @@ import tiktokImg2 from '../img/tiktooo.png'
 import whatsappImg2 from '../img/whasaa.png'
 
 function Index() {
+  const [menuAbierto, setMenuAbierto] = useState(false);
   return (
+    
     <>
       {/* Barra de menú */}
       <nav className="barra-menu">
-        <div className="logo">
-          <img src={logo} alt="Sweet Kellove logo" />
-          <span>Sweet Kellove</span>
-        </div>
-        <div className="opciones-menu">
-          <a href="#inicio">Inicio</a>
-          <a href="#productos">Productos</a>
-          <a href="#sobre_nosotros">Sobre nosotros</a>
-          <a href="#contacto">Contacto</a>
-        </div>
-      </nav>
+      <div className="logo">
+        <img src={logo} alt="Sweet Kellove logo" />
+        <span>Sweet Kellove</span>
+      </div>
+
+      <button
+        className="hamburguesa"
+        onClick={() => setMenuAbierto(!menuAbierto)}
+      >
+        ☰
+      </button>
+
+      <div className={`opciones-menu ${menuAbierto ? 'activo' : ''}`}>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#sobre_nosotros">Sobre nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
 
       {/* Contenido principal */}
       <main className="contenido">

@@ -53,36 +53,7 @@ body {
   z-index: 100;
   box-shadow: 0 1px 0 var(--beige-dark), 0 4px 20px var(--sombra);
 }
-/* ===== CELULARES ===== */
-@media (max-width: 768px) {
 
-  .barra-menu {
-    padding: 0 3%;
-    height: 65px;
-  }
-
-  .logo {
-    gap: 8px;
-  }
-
-  .logo img {
-    height: 36px;
-  }
-
-  .logo span {
-    font-size: 16px;
-  }
-
-  .opciones-menu a {
-    font-size: 11px;
-    padding: 6px 8px;
-  }
-
-  .opciones-menu a:last-child {
-    padding: 6px 12px;
-    margin-left: 4px;
-  }
-}
 
 /* ── Logo ──────────────────────────────────────────── */
 .logo {
@@ -853,5 +824,59 @@ footer {
     flex-direction: column;
     gap: 8px;
     text-align: center;
+  }
+}
+
+/* ── celular ────────────────────────────────────── */
+.hamburguesa {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: var(--marron);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .hamburguesa {
+    display: block;
+  }
+
+  .logo span {
+    font-size: 16px;
+  }
+
+  .opciones-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    background: var(--beige);
+
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1rem 0;
+
+    display: none;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+  }
+
+  .opciones-menu.activo {
+    display: flex;
+  }
+
+  .opciones-menu a {
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+  }
+
+  .opciones-menu a:last-child {
+    margin-left: 0;
+    margin-top: 10px;
   }
 }
