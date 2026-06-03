@@ -1,8 +1,9 @@
-import React from 'react';
-import '../styles/Navbar.css';
-import logo from '../img/logo.png'; 
+import { useState } from 'react'
+import '../styles/Navbar.css'
+import logo from '../img/logo.png'
 
-const Navbar = ({ menuAbierto, setMenuAbierto }) => {
+const Navbar = () => {
+  const [menuAbierto, setMenuAbierto] = useState(false)
 
   const navMenu = [
     { name: 'Inicio', url: '#inicio' },
