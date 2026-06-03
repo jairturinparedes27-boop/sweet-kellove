@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/Products.css';
 
-// Importación de tus imágenes (revisa que la ruta coincida con tu carpeta img)
 import maracuya from '../img/maracuya.png';
 import oreo from '../img/oreo.png';
 import lucuma from '../img/lucuma.png';
@@ -14,7 +13,6 @@ const DATOS_PRODUCTOS = [
     nombre: "tarta de queso de maracuyá",
     descripcion: "Base de queso crema y crema de leche con zumo de maracuyá, (Base de galleta).",
     imagen: maracuya,
-    badge: "POPULAR",
     precios: [
       "Pequeña (8 personas) - S/. 80",
       "Mediana (15 personas) - S/. 120",
@@ -26,7 +24,6 @@ const DATOS_PRODUCTOS = [
     nombre: "Tarta de queso de Oreo",
     descripcion: "Base de queso crema y crema de leche con trozos de galleta Oreo, cubierta con ganache de chocolate. (Base galleta Oreo).",
     imagen: oreo,
-    badge: "POPULAR",
     precios: [
       "Chico (4 personas) - S/. 40",
       "Mediano (6 personas) - S/. 55",
@@ -38,7 +35,6 @@ const DATOS_PRODUCTOS = [
     nombre: "Tarta de queso de Lúcuma",
     descripcion: "Base de queso crema y crema de leche con pulpa de lúcuma, decorada con delicioso manjar artesanal de lúcuma.",
     imagen: lucuma,
-    badge: null,
     precios: [
       "Chico (4 personas) - S/. 40",
       "Mediano (6 - 7 personas) - S/. 60",
@@ -50,7 +46,6 @@ const DATOS_PRODUCTOS = [
     nombre: "Pie de Fresa",
     descripcion: "Elaborado con pasta frolla, relleno de crema pastelera y compota de fresa, decorado con fresas frescas.",
     imagen: fresa,
-    badge: null,
     precios: [
       "Chico (4 - 6 personas) - S/. 30",
       "Mediano (6 - 8 personas) - S/. 40",
@@ -62,7 +57,6 @@ const DATOS_PRODUCTOS = [
     nombre: "Pie de Limón",
     descripcion: "Pasta frolla con un relleno de crema de limón a base de leche condensada, decorada con merengue italiano.",
     imagen: limon,
-    badge: null,
     precios: [
       "Chico (4 - 5 personas) - S/. 30",
       "Mediano (6 - 7 personas) - S/. 40",
@@ -85,7 +79,6 @@ const Products = () => {
             
             <div className="producto-img-container">
               <img src={producto.imagen} alt={producto.nombre} />
-              {producto.badge && <span className="producto-badge">{producto.badge}</span>}
             </div>
 
             <div className="producto-body">
