@@ -3,12 +3,14 @@ import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Contacto from './components/Contacto'
+import Products from './components/Products'
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
+      <Products />
       <Contacto />
       <Footer />
     </>
