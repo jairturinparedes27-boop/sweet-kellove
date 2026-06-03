@@ -1,6 +1,15 @@
 :root {
   color-scheme: light;
   font-family: system-ui, sans-serif;
+  --nav-h: 70px;
+  --crema: #f9f5f0;
+  --beige: #f5e3d4;
+  --beige-light: #f7efe8;
+  --beige-dark: #d9c0aa;
+  --marron: #4a3121;
+  --marron-light: #7a5c42;
+  --marron-dark: #2d1d14;
+  --sombra: rgba(74, 49, 33, 0.12);
 }
 
 html {
@@ -15,7 +24,7 @@ body,
 }
 
 body {
-  background: #fff;
+  background: #fcf7f0;
   color: #333;
 }
 
