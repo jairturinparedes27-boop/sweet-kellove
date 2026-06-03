@@ -1,0 +1,168 @@
+/* ── Sección: Contacto ─────────────────────────────── */
+:root {
+  --beige:        #e5d4bc;
+  --beige-light:  #f5ede0;
+  --beige-dark:   #cdbfa6;
+  --marron:       #4a3121;
+  --marron-dark:  #2d1d14;
+  --marron-light: #7a5c42;
+  --rosa:         #d4a5a5;
+  --rosa-light:   #f0dede;
+  --crema:        #faf6f0;
+  --texto:        #4a3121;
+  --sombra:       rgba(74, 49, 33, 0.12);
+  --nav-h:        80px;
+}
+
+.contacto-icon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacto-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#contacto {
+  padding: 6rem 7%;
+  /* Fondo de sección: tono beige claro de la paleta */
+  background: var(--beige-light);
+}
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.contacto-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  /* Color de título: marrón principal */
+  color: var(--marron);
+  margin-bottom: 1rem;
+}
+
+.contacto-info > p {
+  font-size: 14.5px;
+  /* Color de texto: marrón claro */
+  color: var(--marron-light);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.contacto-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  /* Color de textos de datos: marrón principal */
+  color: var(--marron);
+}
+
+.contacto-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  /* Fondo del icono: beige claro */
+  background: var(--beige-light);
+  /* Borde del icono: beige oscuro */
+  border: 1px solid var(--beige-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+/* ── Formulario de contacto ───────────────────────── */
+.formulario {
+  background: #fff;
+  border: 1px solid var(--beige);
+  border-radius: 20px;
+  padding: 2.2rem 2.4rem;
+}
+
+.form-row {
+  margin-bottom: 1.2rem;
+}
+
+.form-row label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  /* Color de etiquetas: marrón claro */
+  color: var(--marron-light);
+  margin-bottom: 6px;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  width: 100%;
+  padding: 11px 15px;
+  border: 1.5px solid var(--beige-dark);
+  border-radius: 10px;
+  /* Fondo de campos: color crema */
+  background: var(--crema);
+  /* Color de texto en campos: marrón principal */
+  color: var(--marron);
+  font-family: 'Lato', sans-serif;
+  font-size: 14.5px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+  /* Borde al seleccionar: marrón claro */
+  border-color: var(--marron-light);
+  box-shadow: 0 0 0 3px rgba(74, 49, 33, 0.08);
+  background: #fff;
+}
+
+.form-row textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.btn-form {
+  width: 100%;
+  /* Fondo botón: marrón principal */
+  background: var(--marron);
+  /* Texto botón: color crema */
+  color: var(--crema);
+  border: none;
+  border-radius: 40px;
+  padding: 14px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.btn-form:hover {
+  /* Fondo al pasar el ratón: marrón más oscuro */
+  background: var(--marron-dark);
+  transform: translateY(-2px);
+}
