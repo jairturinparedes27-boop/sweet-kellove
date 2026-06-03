@@ -1,0 +1,116 @@
+.productos-section {
+  padding: 5rem 6%;
+  background-color: var(--crema);
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.producto-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--beige);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px var(--sombra);
+}
+
+.producto-img-container {
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+}
+
+.producto-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.producto-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #4a3121; 
+  color: var(--beige-light);
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.producto-body {
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.producto-body h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--marron);
+  margin-bottom: 0.6rem;
+  line-height: 1.2;
+}
+
+.producto-body p {
+  font-family: 'Lato', sans-serif;
+  font-size: 13.5px;
+  color: var(--marron-light);
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  flex-grow: 1; 
+}
+
+.lista-precios {
+  margin-bottom: 1.5rem;
+}
+
+.precio-item {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--marron);
+  padding: 6px 0;
+  border-bottom: 1px solid #f5ede0;
+}
+
+.producto-footer {
+  margin-top: auto;
+}
+
+.btn-pedir {
+  display: inline-block;
+  background-color: var(--beige-light);
+  color: var(--marron);
+  border: 1px solid var(--beige-dark);
+  border-radius: 30px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px 20px;
+  transition: all 0.2s ease;
+}
+
+.btn-pedir:hover {
+  background-color: var(--marron);
+  color: var(--crema);
+  border-color: var(--marron);
+}
