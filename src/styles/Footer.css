@@ -1,0 +1,144 @@
+/* ── Footer ────────────────────────────────────────── */
+
+:root {
+  --beige:        #e5d4bc;
+  --beige-light:  #f5ede0;
+  --beige-dark:   #cdbfa6;
+  --marron:       #4a3121;
+  --marron-dark:  #2d1d14;
+  --marron-light: #7a5c42;
+  --rosa:         #d4a5a5;
+  --rosa-light:   #f0dede;
+  --crema:        #faf6f0;
+  --texto:        #4a3121;
+  --sombra:       rgba(74, 49, 33, 0.12);
+  --nav-h:        80px;
+}
+
+footer {
+  /* Fondo del pie de página: marrón principal */
+  background: var(--marron);
+  padding: 3rem 7% 2rem;
+  /* Color de texto general: beige claro */
+  color: var(--beige-light);
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 3rem;
+  padding-bottom: 2.5rem;
+  /* Borde separador: tono beige con transparencia */
+  border-bottom: 1px solid rgba(229, 212, 188, 0.2);
+  margin-bottom: 2rem;
+}
+
+.footer-brand h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-style: italic;
+  /* Color de título de marca: beige claro */
+  color: var(--beige-light);
+  margin-bottom: 0.75rem;
+}
+
+.footer-brand p {
+  font-size: 13.5px;
+  /* Color de descripción: beige oscuro */
+  color: var(--beige-dark);
+  line-height: 1.75;
+}
+
+.footer-col h4 {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  /* Color de encabezados de columna: beige base */
+  color: var(--beige);
+  margin-bottom: 1rem;
+}
+
+.footer-col a {
+  display: block;
+  font-size: 13.5px;
+  /* Color de enlaces: beige oscuro */
+  color: var(--beige-dark);
+  text-decoration: none;
+  margin-bottom: 0.6rem;
+  transition: color 0.2s;
+}
+
+.footer-col a:hover {
+  /* Color de enlace al pasar el ratón: beige claro */
+  color: var(--beige-light);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12.5px;
+  /* Color de texto inferior: beige oscuro */
+  color: var(--beige-dark);
+}
+
+.redes-sociales {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.redes-sociales a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.redes-sociales img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.redes-sociales img:hover {
+  transform: scale(1.15);
+}
+
+/* ── Reglas responsive para estas secciones ───────── */
+@media (max-width: 900px) {
+  .contacto-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-brand {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand {
+    grid-column: span 1;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
