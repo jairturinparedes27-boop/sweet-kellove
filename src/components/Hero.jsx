@@ -3,7 +3,7 @@ import '../styles/Hero.css';
 
 const Hero = () => {
   return (
-    <section className="hero-section">
+    <section id="inicio" className="hero-section">
       <span className="eyebrow">Pastelería artesanal · Lima, Perú</span>
       <h1>
         Cada dulce y sabor,<br />
