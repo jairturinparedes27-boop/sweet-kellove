@@ -1,7 +1,7 @@
-import ubicacionImg from '../img/ubicacion.png'
-import whatsappImg from '../img/whatsapp.png'
+import ubicationImg from '../img/ubicacion.png'
 import gmailImg from '../img/gmail.png'
-import tiktokImg from '../img/tiktok.png'
+import tiktokImg2 from '../img/tiktooo.png'
+import whatsappImg2 from '../img/whasaa.png'
 import '../styles/Contacto.css'
 
 function Contacto() {
@@ -23,14 +23,14 @@ function Contacto() {
 
           <div className="contacto-item">
             <div className="contacto-icon">
-              <img src={ubicacionImg} alt="Ubicación" />
+              <img src={ubicationImg} alt="Ubicación" />
             </div>
             <span>Lima, Perú</span>
           </div>
 
           <div className="contacto-item">
             <div className="contacto-icon">
-              <img src={whatsappImg} alt="WhatsApp" />
+              <img src={whatsappImg2} alt="WhatsApp" />
             </div>
             <a
               href="https://wa.me/51900461130?text=Hola,%20quiero%20hacer%20un%20pedido"
@@ -52,7 +52,7 @@ function Contacto() {
 
           <div className="contacto-item">
             <div className="contacto-icon">
-              <img src={tiktokImg} alt="TikTok" />
+              <img src={tiktokImg2} alt="TikTok" />
             </div>
             <a
               href="https://www.tiktok.com/@sweetkellovee"
