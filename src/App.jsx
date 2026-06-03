@@ -8,10 +8,9 @@ function App() {
   return (
     <>
       <Navbar />
+      <Hero />
       <Contacto />
       <Footer />
-
-      <Hero />
     </>
   )
 }
