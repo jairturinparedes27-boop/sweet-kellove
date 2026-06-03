@@ -91,8 +91,10 @@
   border-bottom: 1px solid #f5ede0;
 }
 
+/* ── Modificación para centrar el Botón Pedir ──────── */
 .producto-footer {
   margin-top: auto;
+  text-align: center; /* ¡Aquí se hace la magia! Centra el botón inline-block */
 }
 
 .btn-pedir {
@@ -116,10 +118,17 @@
   color: var(--crema);
   border-color: var(--marron);
 }
+
+/* ── Encabezado ultra asegurado para el centrado ──── */
 .seccion-header {
   text-align: center;     
   margin-bottom: 3.5rem;
   width: 100%;            
+}
+
+/* Forzamos el h2 interno por si acaso otra clase global lo estuviera pisando */
+.seccion-header h2 {
+  text-align: center;
 }
 
 .seccion-label {
