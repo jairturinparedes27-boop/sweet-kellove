@@ -1,4 +1,4 @@
-import '../styles/Sobrenosotros.css'
+import '../styles/SobreNosotros.css'
 
 function SobreNosotros() {
   return (
