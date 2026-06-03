@@ -1,4 +1,4 @@
-import '../styles/SobreNosotros.css'
+import '../styles/Sobrenosotros.css'
 
 function SobreNosotros() {
   return (
@@ -57,4 +57,4 @@ function SobreNosotros() {
   )
 }
 
-export default SobreNosotros
+export default Sobrenosotros
