@@ -1,6 +1,7 @@
 .productos-section {
   padding: 5rem 6%;
   background-color: var(--crema);
+  scroll-margin-top: 90px;
 }
 
 .productos-grid {
