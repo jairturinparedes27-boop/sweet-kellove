@@ -19,13 +19,9 @@ function Contacto() {
 
     const mensaje = `
    *Nuevo Pedido Sweet Kellove*
-
    *Nombre:* ${nombre}
-
    *Contacto:* ${contacto}
-
    *Tipo de pedido:* ${tipoPedido}
-
    *Detalles del pedido:*
 ${pedido}
     `

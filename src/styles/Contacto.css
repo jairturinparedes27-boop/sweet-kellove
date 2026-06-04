@@ -188,3 +188,61 @@
 .contacto-icon {
   transition: 0.3s;
 }
+
+/* ── Responsive Contacto ───────────────────────── */
+
+@media (max-width: 768px) {
+
+  #contacto {
+    padding: 4rem 5%;
+  }
+
+  .contacto-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .formulario {
+    padding: 1.5rem;
+  }
+
+  .contacto-info {
+    text-align: center;
+  }
+
+  .contacto-item {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .formulario {
+    padding: 1rem;
+  }
+
+  .form-row input,
+  .form-row select,
+  .form-row textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .btn-form {
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  .contacto-info h3 {
+    font-size: 22px;
+  }
+
+  .contacto-info p {
+    font-size: 14px;
+  }
+}
