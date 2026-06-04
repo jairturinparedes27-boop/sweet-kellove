@@ -166,3 +166,25 @@
   background: var(--marron-dark);
   transform: translateY(-2px);
 }
+
+.contacto-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #4A3121;
+  transition: 0.3s;
+}
+
+.contacto-link:hover {
+  transform: translateX(5px);
+  color: #7a5c42;
+}
+
+.contacto-link:hover .contacto-icon {
+  transform: scale(1.1);
+}
+
+.contacto-icon {
+  transition: 0.3s;
+}
